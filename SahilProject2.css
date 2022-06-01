@@ -1,0 +1,282 @@
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html
+    {
+        scroll-behavior:smooth;
+        
+    }
+
+    /* Making a few Global CSS varibales */
+    :root
+    {
+        --navbar-height: 59px;
+    }
+
+    /* Navigation Bar CSS */
+    #navbar
+    {
+        display: flex;
+        align-items: center;
+        /* position: absolute; */
+        top: 0px;
+    }
+
+    #navbar::before
+    {
+        content: "";
+        background-color: #a5a4a1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    
+    }
+
+    /* Navigation Bar Logo */
+
+    #logo img
+    {
+        width: 85px;
+        height: 75px;
+        margin: 4px 20px
+    }
+
+
+    /* Navigation Bar List */
+
+    #navbar ul
+    {
+        display: flex;
+        font-family: 'Acme', sans-serif;
+    }
+
+
+    #navbar ul li
+    {
+        list-style: none;           /*Bullets will not apper*/
+        font-size: 1.3rem;
+
+    }
+
+    #navbar ul li a
+    {
+        color: white;
+        display: block;
+        margin: 15px 20px;
+        padding: 3px 9px;
+        border-radius: 20px;
+        text-decoration: none;           /*Underline under the link won't appear*/
+
+    }
+
+    #navbar ul li a:hover
+    {
+        color: black;
+        background-color: whitesmoke;
+    }
+
+
+    /* CSS for Home Section */
+
+    #home 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 23px 23px;
+        justify-content: center;
+        align-items: center;
+        height: 480px;      
+        
+    }
+
+    /* Using Pseudo selector before to set background image
+    use ::before and set z-index -1  */
+    #home::before
+    {
+        content: "";
+        position: absolute;
+        background: url("anna-pelzer-IGfIGP5ONV0-unsplash.jpg") no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.75;
+        top: 0px;
+        left: 0px;
+        
+    }
+
+    #home h1
+    {
+        color: aliceblue;
+        text-align: center;
+        
+    }
+
+    #home p
+    {
+        color: aliceblue;
+        font-size: 1.5rem;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        text-align: center;
+        
+
+    }
+
+
+    /* Services Section */
+
+    #services
+    {
+        margin: -2px 40px;
+        padding: 10px 6px;
+        display: flex;
+        text-align: center;   
+
+    }
+
+    #services .box
+    {
+        border: 2px solid brown;
+        padding: 34px;
+        margin: 3px 6px;
+        border-radius: 28px;
+        background-color: chocolate;
+    }
+
+    #services .box img
+    {
+        height: 156px;
+        display: flex;
+        margin: auto;
+    }
+
+
+    /* Parteners Section */
+
+    #partners-section::before
+    {
+        content: "";
+        position: absolute;
+        background: url("ourpartners.jpg") no-repeat center center/cover;
+        width: 100%;
+        height: 360px;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    #partners
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #partners img
+    {
+        height: 155px;
+        padding: 25px 17px;
+    }
+
+
+    /* Contact Section */
+
+    #contact
+    {
+        background-color: #a5a4a1;
+        /* height: 80%; */
+    }
+
+    .contact-box
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 22px;
+        height: 350px;
+
+    }
+
+    .contact-box input, .contact-box textarea
+    {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 0.9rem;
+    }
+
+    .contact-box form
+    {
+        width:40%;
+    }
+
+    .contact-box label
+    {
+        font-size: 1.1rem;
+        font-family: 'Acme', sans-serif;
+    }
+
+
+    /* Footer section */
+
+    .foot
+    {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 9px 20px;
+
+    }
+
+
+
+
+    /* Utility Class */
+    /* can use the same class for all headings throughout the website */
+    .h-primary
+    {
+        font-size: 3.8rem;
+        padding: 12px;
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    .h-secondary
+    {
+        font-size: 1.8rem;
+        padding: 11px;
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    #btn
+    {
+        padding: 11px 23px;
+        border: 1px solid whitesmoke;
+        background: brown;
+        color: wheat;
+        margin: 16px 19px; 
+        font-size: 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    #home button:hover
+    {
+        background-color: rgb(114, 21, 21);
+    }
+
+    .box p
+    {
+        font-family:Georgia, 'Times New Roman', Times, serif;    
+        font-size: 1rem;
+    }
+    
+
+
+

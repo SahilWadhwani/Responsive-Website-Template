@@ -1,0 +1,77 @@
+/* This stylesheet will get triggered only when the max-width will be less then 1100px as specified in the media query */
+
+/* Navigation bar */
+#navbar
+{
+    flex-direction: column;
+}
+
+#navbar ul a
+{
+    font-size: 0.8rem;
+}
+
+/* Home Section */
+
+#home p 
+{
+    font-size: 13px;
+}
+
+#home h1 
+{
+    font-size: 23px;
+}
+
+#home
+{
+    height: 330px; 
+}
+
+
+/* Services Section */
+#services
+{
+    display: block;            /*as sson as width goes below 1100px, the boxes will become block, matlab ek ke neeche ek aa jaaeyge*/
+
+}
+
+#services .box img 
+{
+    height: 100px;
+}
+
+#services .box
+{
+    padding: 18px 113px;
+    margin: 3px 46px;
+}
+
+
+/* Parterns Section */
+#partners
+{
+    flex-wrap: wrap;
+}
+
+#partners img
+{
+    width: 66px;
+    height: 100px;
+    padding: 10px 5px;
+}
+
+
+
+
+/* Contact Section */
+
+.contact-box form
+{
+    width:30%;
+}
+
+
+
+
+/* Footer */
